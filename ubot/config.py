@@ -60,7 +60,7 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://joviobot:joviobot@cluster0.ekymjd9.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://jvbt:jvbt@cluster0.fqhgdcp.mongodb.net/?retryWrites=true&w=majority",
 )
 
 DB_NAME = os.getenv("DB_NAME", "mongo.skyubot")
