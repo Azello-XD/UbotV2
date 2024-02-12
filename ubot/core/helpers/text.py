@@ -31,7 +31,7 @@ If you have already made a payment, please click the Create Userbot button.</b>
         return f"""
 <b>Please Make Payment First</b>
 
-<b>Monthly Price: 15.000</b>
+<b>Monthly Price: {harga}.000</b>
 
 <b>💳 Payment method:</b>
  <b>├──• Seabank </b>
