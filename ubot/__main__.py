@@ -14,9 +14,7 @@ async def loader_user(user_id, _ubot):
     ubot_ = Ubot(**_ubot)
     try:
         await asyncio.wait_for(ubot_.start(), timeout=90)
-        await ubot_.join_chat("kynansupport")
-        await asyncio.join_chat("friendshipsuport")
-        await asyncio.join_chat ("friendshipstoree")
+        await ubot_.join_chat("jovv1oubot")       
         # await del_log_group(ubot_.me.id)
         # ajg = await get_log(ubot_)
         # await ubot_.delete_supergroup(int(ajg.id))
