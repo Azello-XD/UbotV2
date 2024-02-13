@@ -5,7 +5,7 @@ import random
 from pyrogram.errors import (ChatWriteForbidden, FloodWait, PeerIdInvalid,
                              SlowmodeWait)
 
-from ubot import *
+from ubot import BLACKLIST_CHAT, PY, ambil_daftar, daftar_rndm, get_chat, kureng_kata, kureng_rndm, tambah_kata, tambah_rndm, gen_font, font
 
 from .gcast import get_broadcast_id
 
