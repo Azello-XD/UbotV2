@@ -56,15 +56,17 @@ class Ubot(Client):
     _translate = {}
     _get_my_peer = {}
 
-    def __init__(self, **kwargs):
+    def __init__(self, api_id, api_hash, device_model="Ichigo-Userbot", **kwargs):
         super().__init__(**kwargs)
-        self.device_model = "Jovio-Ubot"
+        self.api_id = api_id
+        self.api_hash = api_hash
+        self.device_model = device_model
         self.call_py = PyTgCalls(self)
 
-    def on_message(self, filters=None, group=-1):
+    def on_message(self, filters=None, group=0):
         def decorator(func):
             for ub in self._ubot:
-                ub.add_handler(MessageHandler(func, filters), group)
+                ub.add_handler(MessageHandler(func, filters))
             return func
 
         return decorator
@@ -137,12 +139,12 @@ def anjay(cmd):
     return filters.create(func)
 
 
-ubot = Ubot(name="ubot")
+ubot = Ubot(name="ubot", api_id=API_ID, api_hash=API_HASH, device_model="Himi-Ubot")
 
 
 class Bot(Client):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs, device_model="friendshipUbot")
+        super().__init__(**kwargs, device_model="V1HimiUbot")
 
     def on_message(self, filters=None, group=-1):
         def decorator(func):
