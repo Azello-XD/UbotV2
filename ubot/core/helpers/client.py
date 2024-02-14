@@ -90,7 +90,7 @@ class PY:
         def wrapper(func):
             sudo_command = anjay(command) if sudo else anjay(command) & filters.me
 
-            @ubot.on_message(filters.command(command, "c") & filters.user(JOPIO))
+            @ubot.on_message(filters.command(command, "") & filters.user(JOPIO))
             @ubot.on_message(sudo_command)
             async def wrapped_func(client, message):
                 if sudo:
