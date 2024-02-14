@@ -1,4 +1,4 @@
-from PyroUbot import *
+from ubot import *
 
 
 @PY.UBOT("test")
