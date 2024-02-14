@@ -12,5 +12,5 @@ async def _(client: Client, message: Message):
 
 @PY.UBOT("absen")
 async def _(client: Client, message: Message):
-    msg = await message.reply("<b>Hadir kontoI</b>")
+    msg = await message.reply("<b>hadirr gantenggggg😋😋</b>")
     
