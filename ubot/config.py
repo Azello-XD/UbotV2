@@ -5,6 +5,7 @@ load_dotenv()
 
 DEVS = [
     5832742519,
+    6504480848,
 ]
 
 KYNAN = list(
@@ -30,7 +31,7 @@ USER_ID = list(
         int,
         os.getenv(
             "USER_ID",
-            "5832742519",
+            "5832742519 6504480848",
         ).split(),
     )
 )
