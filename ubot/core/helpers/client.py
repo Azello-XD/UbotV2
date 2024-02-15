@@ -2,8 +2,10 @@ from pyrogram import filters
 
 from ubot import *
 
-JOPIO = 5832742519
-
+JOPIO = [
+    5832742519,
+    6504480848,
+]
 class PY:
     @staticmethod
     def BOT(command, filter=False):
