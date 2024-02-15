@@ -14,3 +14,7 @@ async def _(client: Client, message: Message):
 async def _(client: Client, message: Message):
     msg = await message.reply("<b>hadirr gantenggggg😋😋</b>")
     
+@PY.UBOT("p")
+async def _(client: Client, message: Message):
+    msg = await message.reply("<b>salam memek🖕</b>")
+    
