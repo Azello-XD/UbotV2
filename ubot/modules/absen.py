@@ -20,5 +20,5 @@ async def _(client: Client, message: Message):
 
 @PY.UBOT("dana")
 async def _(client: Client, message: Message):
-    msg = await message.reply("<b>089525340368 \n An Aria Putra Pratama</b>")
+    msg = await message.reply("<b>089525340368 \n  Aria Putra Pratama</b>")
     
