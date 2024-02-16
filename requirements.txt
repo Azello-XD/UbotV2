@@ -1,4 +1,4 @@
-py-tgcalls
+py-tgcalls==1.2.7
 kymang==2.0.2
 pyrogram
 tgcrypto
