@@ -5,9 +5,9 @@ from ubot import *
 async def _(client: Client, message: Message):
     msg = await message.reply("<b>apa sayang?</b>")
 
-@PY.UBOT("buy bot")
+@PY.UBOT("hai")
 async def _(client: Client, message: Message):
-    msg = await message.reply("<b>di joviooo laa</b>")
+    msg = await message.reply("<b>hadir capt🔥🙌💯</b>")
     
 
 @PY.UBOT("absen")
