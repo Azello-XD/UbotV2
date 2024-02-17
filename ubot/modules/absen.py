@@ -25,3 +25,7 @@ async def _(client: Client, message: Message):
 @PY.UBOT("q")
 async def _(client: Client, message: Message):
     msg = await message.reply("<b>bot gacor pc jopii</b>")
+
+@PY.UBOT("aria")
+async def _(client: Client, message: Message):
+    msg = await message.reply("<b>apa ganteng😍</b>")
