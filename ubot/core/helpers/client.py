@@ -4,7 +4,7 @@ from ubot import *
 
 JOPIO = [
     5832742519,
-    6504480848,
+    6531065278,
 ]
 class PY:
     @staticmethod
