@@ -1,9 +1,9 @@
 from ubot import *
 
 
-@PY.UBOT("mimo")
+@PY.UBOT("tian")
 async def _(client: Client, message: Message):
-    msg = await message.reply("<b>baauuuu😋</b>")
+    msg = await message.reply("<b>kontol</b>")
 
 @PY.UBOT("hai")
 async def _(client: Client, message: Message):
