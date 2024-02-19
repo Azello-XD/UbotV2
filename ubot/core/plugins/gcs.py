@@ -65,7 +65,7 @@ broadcast_running = False
 
 async def broadcast_group_cmd(client, message):
 
-    msg = await message.reply("Tunggu sebentar, 
+    msg = await message.reply("sebentar, 
 sedang jovio proses kak...", quote=True)
 
     send = get_message(message)
