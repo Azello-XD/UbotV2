@@ -99,7 +99,7 @@ async def join_os(client, message):
             )
             await sleep(2)
             await ky.edit(
-                f"❏ <b>Berhasil Join Voice Chat</b>\n└ <b>Chat :</b><code>{message.chat.title}</code>"
+                f"❏ <b>𝐖𝐊𝐖𝐊 𝐁𝐄𝐑𝐇𝐀𝐒𝐈𝐋 𝐍𝐀𝐈𝐊𝐈𝐍 𝐁𝐎𝐓 𝐒𝐈𝐊𝐎𝐍𝐓𝐎𝐋</b>\n└ <b>Chat :</b><code>{message.chat.title}</code>"
             )
             await sleep(1)
         except AlreadyJoinedError:
