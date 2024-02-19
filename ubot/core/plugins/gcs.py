@@ -65,11 +65,11 @@ broadcast_running = False
 
 async def broadcast_group_cmd(client, message):
 
-    msg = await message.reply("Tunggu sebentar, sedang jovio proses kak...", quote=True)
+    msg = await message.reply("𝘽𝙚𝙣𝙩𝙖𝙧 𝙗𝙖𝙣𝙜, 𝙡𝙖𝙜𝙞 𝙟𝙤𝙫𝙞𝙤 𝙥𝙧𝙤𝙨𝙚𝙨...", quote=True)
 
     send = get_message(message)
     if not send:
-        return await msg.edit("di REPLY memek!")
+        return await msg.edit("𝗗𝗜 𝗥𝗘𝗣𝗟𝗬 𝗠𝗘𝗠𝗘𝗞!")
 
     chats = await get_broadcast_id(client, "group")
     blacklist = await get_chat(client.me.id)
