@@ -65,7 +65,7 @@ broadcast_running = False
 
 async def broadcast_group_cmd(client, message):
 
-    msg = await message.reply("<emoji id=5974138473232207400>🔻</emoji> 𝘽𝙚𝙣𝙩𝙖𝙧 𝙗𝙖𝙣𝙜, 𝙡𝙖𝙜𝙞 𝙟𝙤𝙫𝙞𝙤 𝙥𝙧𝙤𝙨𝙚𝙨...", quote=True)
+    msg = await message.reply("<emoji id=5974138473232207400>🔻</emoji> 𝚃𝚞𝚗𝚐𝚐𝚞 𝚜𝚎𝚋𝚎𝚗𝚝𝚊𝚛, 𝚜𝚎𝚍𝚊𝚗𝚐 𝚓𝚘𝚟𝚒𝚘 𝚙𝚛𝚘𝚜𝚎𝚜 𝚔𝚊...", quote=True)
 
     send = get_message(message)
     if not send:
@@ -98,7 +98,7 @@ async def broadcast_group_cmd(client, message):
         except BaseException:
             failed += 1
     await msg.edit(
-            f"**pesan broadcast Anda terkirim ke {done} grup. gagal: {failed}**."
+            f"<emoji id=5974138473232207400>🔻</emoji> **pesan broadcast Anda terkirim ke {done} grup. gagal: {failed}**."
         )
         
         
