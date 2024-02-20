@@ -65,7 +65,7 @@ broadcast_running = False
 
 async def broadcast_group_cmd(client, message):
 
-    msg = await message.reply("<emoji id=5974138473232207400>🔻</emoji> 𝚃𝚞𝚗𝚐𝚐𝚞 𝚜𝚎𝚋𝚎𝚗𝚝𝚊𝚛, 𝚜𝚎𝚍𝚊𝚗𝚐 𝚓𝚘𝚟𝚒𝚘 𝚙𝚛𝚘𝚜𝚎𝚜 𝚔𝚊...", quote=True)
+    msg = await message.reply("<emoji id=5974138473232207400>🔻</emoji> ᴊᴏᴠɪᴏ ᴘʀᴏsᴇs <emoji id=5974329964349099454>🔹</emoji>", quote=True)
 
     send = get_message(message)
     if not send:
