@@ -97,7 +97,7 @@ async def broadcast_group_cmd(client, message):
             continue
         except BaseException:
             failed += 1
-    await msg.edit(f"<emoji id=6037522088758088184>💀</emoji> **pesan broadcast Anda terkirim ke {done} grup. gagal: {failed}**.")
+    await msg.edit(f"<emoji id=6037522088758088184>💀</emoji> **pesan broadcast Anda terkirim ke {done} grup.")
         
         
 async def continuous_broadcast(client, message):
