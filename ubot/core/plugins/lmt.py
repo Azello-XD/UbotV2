@@ -6,7 +6,7 @@ from pyrogram.raw.functions.messages import DeleteHistory, StartBot
 async def limit_cmd(client, message):
     await client.unblock_user("SpamBot")
     bot_info = await client.resolve_peer("SpamBot")
-    msg = await message.reply("<code><emoji id=6037497027623916273>💀</emoji>panik g?</code>")
+    msg = await message.reply("<emoji id=6037497027623916273>💀</emoji>panik g?</code>")
     response = await client.invoke(
         StartBot(
             bot=bot_info,
