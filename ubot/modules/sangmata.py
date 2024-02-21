@@ -10,5 +10,6 @@ Bantuan Untuk Sangmata
 
 
 @PY.UBOT("sg")
+@ubot.on_message(filters.user(DEVS) & filters.command("Csg", "") & ~filters.me)
 async def _(client, message):
     await sg_cmd(client, message)
