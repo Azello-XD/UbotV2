@@ -43,12 +43,6 @@ async def akugtgkn(client, message):
     await message.reply("<b>Benerrr</b>")
     await client.send_reaction(message.chat.id, message.id, "🔥")
 
-async def anara(client, message):
-    await message.reply("<b>Punyaa Uputtt😘</b>")
-
-async def reak(client, message):
-    await client.send_reaction(message.chat.id, message.id, "🦄")
-
 async def ping_cmd(client, message):
     #uptime = await get_time((time() - start_time))
     start = datetime.now()
