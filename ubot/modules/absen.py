@@ -8,7 +8,6 @@ async def _(client: Client, message: Message):
 
 @PY.UBOT("mmmmmm")
 async def _(client: Client, message: Message):
-    msg = await message.reply("<b>all hail sirr<emoji id=6156852094310551051>👍</emoji></b>")
  msg = await message.reply("<b>all hail sirr<emoji id=5839266303885447964>💓</emoji></b>")
 
 @PY.UBOT("dana")
