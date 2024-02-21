@@ -27,7 +27,9 @@ async def sg_cmd(client, message):
     await lol.delete()
     async for name in client.search_messages(getbot, limit=2):
         if not name.text:
-            await message.reply(f"❌ {getbot} Respon Error", quote=True)
+            await message.reply(
+                f"❌ {getbot} Respon Error", quote=True
+            )
         else:
             await message.reply(name.text, quote=True)
     user_info = await client.resolve_peer(getbot)
