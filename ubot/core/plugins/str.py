@@ -40,8 +40,8 @@ async def sayang(client, message):
 
 
 async def akugtgkn(client, message):
-    await message.reply("<b>Iyaaa uputtt gantengg bangettt😘😍🥰</b>")
-
+    await message.reply("<b>Benerrr</b>")
+    await client.send_reaction(message.chat.id, message.id, "🔥")
 
 async def anara(client, message):
     await message.reply("<b>Punyaa Uputtt😘</b>")
