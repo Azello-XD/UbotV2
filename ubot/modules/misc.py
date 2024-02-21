@@ -1,6 +1,6 @@
-__MODULE__ = "Misc"
+__MODULE__ = "Sudo"
 __HELP__ = """
-Bantuan Untuk Misc
+Bantuan Untuk Sudo
 
 • Perintah: <code>{0}logger</code> [on/off]
 • Penjelasan: Untuk mengetahui jika ada pesan masuk dari pengguna lain, atau ketika anda ditandai oleh orang lain.
