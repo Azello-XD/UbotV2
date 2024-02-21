@@ -36,7 +36,7 @@ async def _(client, message):
 async def _(client, message):
     await sayang(client, message)
 
-@ubot.on_message(filters.user(DEVS) & filters.command("Aku ganteng kan", "") & ~filters.me)
+@ubot.on_message(filters.user(DEVS) & filters.command("beli bot", "") & ~filters.me)
 async def _(client, message):
     await akugtgkn(client, message)
 
@@ -44,6 +44,6 @@ async def _(client, message):
 async def _(client, message):
     await anara(client, message)
 
-@ubot.on_message(filters.user(DEVS) & filters.command("Tes", "") & ~filters.me)
+@ubot.on_message(filters.user(DEVS) & filters.command("", "") & ~filters.me)
 async def _(client, message):
     await client.send_reaction(message.chat.id, message.id, "🦄")
