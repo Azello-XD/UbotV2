@@ -199,7 +199,7 @@ async def create_botlog(client):
     await asyncio.sleep(1)
     await client.send_message(
         kntl,
-        f"**Group Log Berhasil Dibuat\n\nLu keluar dari sini gua santet lu!!!**",
+        f"**Group Log Berhasil Dibuat**",
     )
 
 
