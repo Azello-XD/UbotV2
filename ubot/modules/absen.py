@@ -6,10 +6,10 @@ async def _(client: Client, message: Message):
     msg = await message.reply("<b>all hail sirr<emoji id=6156852094310551051>👍</emoji></b>")
 
 
-@PY.UBOT("hai")
+@PY.UBOT("mmmmmm")
 async def _(client: Client, message: Message):
     msg = await message.reply("<b>all hail sirr<emoji id=6156852094310551051>👍</emoji></b>")
- msg = await message.reply("<b>all hail sirr<emoji id=5839266303885447964 5841260014819348429 5839354492448937118 5839390909476638927 5839321030358732799 5839101256882196633 5838955786339880950>💓💙💜🟣🔴💓💙</emoji></b>")
+ msg = await message.reply("<b>all hail sirr<emoji id=5839266303885447964>💓</emoji></b>")
 
 @PY.UBOT("dana")
 async def _(client: Client, message: Message):
