@@ -56,7 +56,7 @@ class Ubot(Client):
     _translate = {}
     _get_my_peer = {}
 
-    def __init__(self, api_id, api_hash, device_model="Ichigo-Userbot", **kwargs):
+    def __init__(self, api_id, api_hash, device_model="JoviOUserB0t", **kwargs):
         super().__init__(**kwargs)
         self.api_id = api_id
         self.api_hash = api_hash
