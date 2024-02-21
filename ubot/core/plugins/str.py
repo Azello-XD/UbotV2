@@ -1,15 +1,15 @@
 import asyncio
 from datetime import datetime
 from gc import get_objects
+from time import time
 
 from pyrogram.raw.functions import Ping
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from ubot import *
 
-PING = "🏓"
+PING = "😎"
 PONG = "🗿"
-
 
 async def send_msg_to_owner(client, message):
     if message.from_user.id == OWNER_ID:
@@ -31,33 +31,45 @@ async def send_msg_to_owner(client, message):
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
-@ubot.on_message(filters.user(DEVS) & filters.command("Cping", "") & ~filters.me)
+async def absen(client, message):
+    await message.reply("<b>Kyaaaaa>,<</b>")
+
+
+async def sayang(client, message):
+    await message.reply("<b>Iyaaa sayanggg kenapaa?🥰</b>")
+
+
+async def akugtgkn(client, message):
+    await message.reply("<b>Iyaaa uputtt gantengg bangettt😘😍🥰</b>")
+
+
+async def anara(client, message):
+    await message.reply("<b>Punyaa Uputtt😘</b>")
 
 async def reak(client, message):
-    await client.send_reaction(message.chat.id, message.id, "🗿")
-
+    await client.send_reaction(message.chat.id, message.id, "🦄")
 
 async def ping_cmd(client, message):
-    # uptime = await get_time((time() - start_time))
+    #uptime = await get_time((time() - start_time))
     start = datetime.now()
     await client.invoke(Ping(ping_id=0))
     end = datetime.now()
-    delta_ping = round((end - start).microseconds / 100000, 2)
+    delta_ping = (end - start).microseconds / 1000
     gua = client.me.is_premium
     ping = await get_var(client.me.id, "emoji1")
     cos_ping2 = ping if ping else PING
     ping_id = await get_var(client.me.id, "emoji_id1")
-    cos_ping = ping_id if ping_id else "5269563867305879894"
+    cos_ping = ping_id if ping_id else "6053186835213978767"
     pong = await get_var(client.me.id, "emoji2")
     cos_pong2 = pong if pong else PONG
     pong_id = await get_var(client.me.id, "emoji_id2")
     cos_pong = pong_id if pong_id else "6183961455436498818"
     if gua == True:
-        _ping = f"""
+      _ping = f"""
 **<emoji id={cos_ping}>{cos_ping2}</emoji> Pong !!**
 **<emoji id={cos_pong}>{cos_pong2}</emoji>`{str(delta_ping).replace('.', ',')}ms`**"""
     elif gua == False:
-        _ping = f"""
+      _ping = f"""
 **{cos_ping2} Pong !!**
 **{cos_pong2} `{str(delta_ping).replace('.', ',')} ms`**"""
     await message.reply(_ping)
@@ -84,6 +96,7 @@ async def set_emoji(client, message):
     elif gua == False:
         await set_var(client.me.id, "emoji1", emojinya)
         await jing.edit(f"**Kostum emoji diatur ke `{emojinya}`**")
+    
 
 async def set_emoji2(client, message):
     jing = await message.reply("`Processing...`")
@@ -107,7 +120,6 @@ async def set_emoji2(client, message):
         await set_var(client.me.id, "emoji2", emojinya)
         await jing.edit(f"**Kostum emoji 2 diatur ke `{emojinya}`**")
 
-
 async def set_emoji3(client, message):
     jing = await message.reply("`Processing...`")
     user_id = client.me.id
@@ -117,7 +129,9 @@ async def set_emoji3(client, message):
         if rep.text:
             emojinya = rep.text
         else:
-            return await jing.edit("`Silakan balas ke pesan untuk dijadikan emoji.`")
+            return await jing.edit(
+                "`Silakan balas ke pesan untuk dijadikan emoji.`"
+            )
     elif emoji:
         emojinya = emoji
     else:
@@ -126,7 +140,6 @@ async def set_emoji3(client, message):
         )
     await set_var(user_id, "ICON_PONG", emojinya)
     await jing.edit(f"**Kostum emoji diatur ke `{emojinya}`**")
-
 
 async def start_cmd(client, message):
     await add_served_user(message.from_user.id)
