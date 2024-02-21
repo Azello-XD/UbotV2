@@ -52,7 +52,7 @@ async def payment_userbot(client, callback_query):
     await callback_query.message.delete()
     return await bot.send_message(
         user_id,
-        MSG.TEXT_PAYMENT(30, 30, 1),
+        MSG.TEXT_PAYMENT(15, 15, 1),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(buttons),
     )
