@@ -9,6 +9,6 @@ Bantuan Untuk Sangmata
 """
 
 
-@PY.UBOT("sg", sudo=True)
+@PY.UBOT("sg")
 async def _(client, message):
     await sg_cmd(client, message)
