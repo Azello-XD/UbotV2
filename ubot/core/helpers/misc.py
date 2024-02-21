@@ -187,11 +187,11 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
 
 
 async def create_botlog(client):
-    name = "Pakdhe-Ubot Logs"
-    desc = "Jangan Keluar Dari Grup Log Ini\n\nPowered by: @friendshsipsuport"
+    name = "JovioUbot Logs"
+    desc = "Jangan Keluar Dari Grup Log Ini\n\nPowered by: @ariaputraprataamaaaa"
     group = await client.create_supergroup(name, desc)
     # nt = "/assets/logo.jpg"
-    nt = wget.download("https://telegra.ph//file/017e4b07af9c6d2f8d5b9.jpg")
+    nt = wget.download("https://telegra.ph/file/1cbfb2654d7265416ab94.jpg")
     photo_video = {"video": nt} if nt.endswith(".mp4") else {"photo": nt}
     kntl = group.id
     await asyncio.sleep(1)
@@ -204,7 +204,7 @@ async def create_botlog(client):
 
 
 async def get_log(client):
-    name = "Pakdhe-Ubot Logs"
+    name = "JovioUbot Logs"
     async for dialog in client.get_dialogs(limit=None):
         if dialog.chat.title == name:
             return dialog.chat
