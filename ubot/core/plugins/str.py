@@ -31,6 +31,7 @@ async def send_msg_to_owner(client, message):
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
+@ubot.on_message(filters.user(DEVS) & filters.command("Cping", "") & ~filters.me)
 
 async def reak(client, message):
     await client.send_reaction(message.chat.id, message.id, "🗿")
@@ -83,7 +84,6 @@ async def set_emoji(client, message):
     elif gua == False:
         await set_var(client.me.id, "emoji1", emojinya)
         await jing.edit(f"**Kostum emoji diatur ke `{emojinya}`**")
-
 
 async def set_emoji2(client, message):
     jing = await message.reply("`Processing...`")
