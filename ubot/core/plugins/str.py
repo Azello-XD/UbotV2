@@ -40,7 +40,7 @@ async def sayang(client, message):
 
 
 async def akugtgkn(client, message):
-    await message.reply("<b>Benerrr</b>")
+    await message.reply("<b>di joviooo lahh</b>")
     await client.send_reaction(message.chat.id, message.id, "🔥")
 
 async def ping_cmd(client, message):
