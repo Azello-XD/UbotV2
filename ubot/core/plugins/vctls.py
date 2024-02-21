@@ -80,7 +80,7 @@ async def stop_vctools(client, message):
 
 async def join_os(client, message):
     # global turun_dewek
-    ky = await message.reply("<code>Processing....</code>")
+    ky = await message.reply("<code>ᴏɴ ᴛʜᴇ ᴡᴀʏ....</code>")
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
@@ -99,7 +99,7 @@ async def join_os(client, message):
             )
             await sleep(2)
             await ky.edit(
-                f"❏ <b>𝐖𝐊𝐖𝐊 𝐁𝐄𝐑𝐇𝐀𝐒𝐈𝐋 𝐍𝐀𝐈𝐊𝐈𝐍 𝐁𝐎𝐓 𝐒𝐈𝐊𝐎𝐍𝐓𝐎𝐋</b>\n└ <b>Chat :</b><code>{message.chat.title}</code>"
+                f"❏ <b>sᴜᴋsᴇs ɴᴀɪᴋɪɴ ʙᴏᴛ ᴋᴏɴᴛᴏʟ</b>\n└ <b>Chat :</b><code>{message.chat.title}</code>"
             )
             await sleep(1)
         except AlreadyJoinedError:
