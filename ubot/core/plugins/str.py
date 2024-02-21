@@ -59,11 +59,11 @@ async def ping_cmd(client, message):
     ping = await get_var(client.me.id, "emoji1")
     cos_ping2 = ping if ping else PING
     ping_id = await get_var(client.me.id, "emoji_id1")
-    cos_ping = ping_id if ping_id else "6053186835213978767"
+    cos_ping = ping_id if ping_id else "6156852094310551051"
     pong = await get_var(client.me.id, "emoji2")
     cos_pong2 = pong if pong else PONG
     pong_id = await get_var(client.me.id, "emoji_id2")
-    cos_pong = pong_id if pong_id else "6183961455436498818"
+    cos_pong = pong_id if pong_id else "6156520832072945535"
     if gua == True:
       _ping = f"""
 **<emoji id={cos_ping}>{cos_ping2}</emoji> Pong !!**
