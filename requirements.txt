@@ -1,4 +1,4 @@
-py-tgcalls==1.2.7
+py-tgcalls
 kymang==2.0.2
 pyrogram
 tgcrypto
@@ -17,7 +17,7 @@ pySmartDL
 html2text
 removebg
 aiofiles
-aiohttp==3.9.0b0
+aiohttp
 gpytranslate
 gtts
 telegraph
