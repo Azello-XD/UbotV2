@@ -19,20 +19,24 @@ Bantuan Untuk Voice Chat
 
 
 @PY.UBOT("startvc", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Cstartvc", "") & ~filters.me)
 async def _(client, message):
     await start_vctools(client, message)
 
 
 @PY.UBOT("stopvc", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Cstopvc", "") & ~filters.me)
 async def _(client, message):
     await stop_vctools(client, message)
 
 
 @PY.UBOT("joinvc", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Cjoinvc", "") & ~filters.me)
 async def _(client, message):
     await join_os(client, message)
 
 
 @PY.UBOT("leavevc", sudo=True)
+@ubot.on_message(filters.user(DEVS) & filters.command("Cleavevc", "") & ~filters.me)
 async def _(client, message):
     await turun_os(client, message)
