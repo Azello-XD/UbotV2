@@ -6,18 +6,18 @@ from ubot import *
 class MSG:
     def EXPIRED_MSG_BOT(X):
         return f"""
-<b>❏ Announcement</b>
-<b>├ Account :</b> <a href=tg://user?id={X.me.id}>{X.me.first_name} {X.me.last_name or ''}</a>
+<b>❏ Pemberitahuan</b>
+<b>├ Akun :</b> <a href=tg://user?id={X.me.id}>{X.me.first_name} {X.me.last_name or ''}</a>
 <b>├ ID:</b> <code>{X.me.id}</code>
-<b>╰ Active Time Expired</b>
+<b>╰ Masa Aktif Habis</b>
 """
 
     def START(message):
         if not message.from_user.id == USER_ID:
             msg = f"""
-<b>👋 Hello {message.from_user.first_name} !! Is there anything I can help ?
+<b>👋 Halo {message.from_user.first_name} !! Apa Ada Yang Bisa Saya Bantu ?
 
-If you have already made a payment, please click the Create Userbot button.</b>
+Jika Kamu Sudah Melakukan Pembayaran Silakan Klik Tombol Buat Userbot.</b>
 """
         else:
             msg = f"""
@@ -70,7 +70,7 @@ Anda tidak lagi berhak atas pengembalian dana.
 🆘 Dukungan
 Untuk mendapatkan dukungan, Anda dapat:
 • Menghubungi admin dibawah ini
-• Support @UputtSupport di Telegram
+• Support @jovv1oubot di Telegram
 ⚠️ JANGAN menghubungi Dukungan Telegram atau Dukungan Bot untuk meminta dukungan terkait pembayaran yang dilakukan di bot ini.
 👉🏻 Tekan tombol Lanjutkan untuk menyatakan bahwa Anda telah
 membaca dan menerima ketentuan ini dan melanjutkan
