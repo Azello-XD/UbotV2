@@ -62,8 +62,8 @@ async def ping_cmd(client, message):
     if gua == True:
       _ping = f"""
 **<emoji id={cos_ping}>{cos_ping2}</emoji> Pong !!**
-**<emoji id={cos_pong}>{cos_pong2}</emoji>`{str(delta_ping).replace('.', ',')}ms`**
- **<emoji id=6035179905652626049>👁</emoji><b>Uptime :</b> <code>{uptime}</code>**"""
+**<emoji id={cos_pong}>{cos_pong2}</emoji> `{str(delta_ping).replace('.', ',')}ms`**
+**<emoji id=6035179905652626049>👁</emoji><b> Uptime :</b> <code>{uptime}</code>**"""
     elif gua == False:
       _ping = f"""
 **{cos_ping2} Pong !!**
