@@ -29,19 +29,22 @@ If you have already made a payment, please click the Create Userbot button.</b>
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
-<b>Please Make Payment First</b>
+<b>Silakan Lakukan Pembayaran Terlebih Dahulu</b>
 
-<b>Monthly Price: {harga}.000</b>
+<b>Harga Perbulan : {harga}.000</b>
 
-<b>💳 Payment method:</b>
+<b>💳 Metode Pembayaran :</b>
  <b>├──• Seabank </b>
  <b>├─• <code>901095706512</code></b>
+ <b>├──• Dana </b>
+ <b>├─• <code>089525340368</code></b>
+ 
 
 
-<b>🔖 Total price: Rp {total}.000</b>
-<b>🗓️ Total Month: {bulan}</b> 
+<b>🔖 Total harga : Rp {total}.000</b>
+<b>🗓️ Total bulan: {bulan}</b> 
 
-<b>✅ Click the button below to send proof of payment</b>
+<b><emoji id=5328317370647715629>💙</emoji> Klik Tombol Di Bawah Ini Untuk Mengirimkan Bukti Pembayaran</b>
 """
 
     async def USERBOT(count):
@@ -55,23 +58,23 @@ If you have already made a payment, please click the Create Userbot button.</b>
 
     def POLICY():
         return """
-↪️ Return Policy
+↪️ Kebijakan Pengembalian
 
-After making payment, if you have not received/
-receive benefits from the purchase,
-You can exercise your right to replacement within 2 days of purchase. However, if
-You have used/received one of the benefits of
-purchase, including access to userbot creation features, then
-You are no longer entitled to a refund.
+Setelah melakukan pembayaran, jika Anda belum memperoleh/
+menerima manfaat dari pembelian,
+Anda dapat menggunakan hak penggantian dalam waktu 2 hari setelah pembelian. Namun, jika
+Anda telah menggunakan/menerima salah satu manfaat dari
+pembelian, termasuk akses ke fitur pembuatan userbot, maka
+Anda tidak lagi berhak atas pengembalian dana.
 
-🆘 Support
-To get support, you can:
-• Contact the admin below
-• Support @j0vv1osupp0rt on Telegram
-⚠️ DO NOT contact Telegram Support or Bot Support to request te support
-👉🏻 Press the Continue button to confirm that you have
-read and accept these terms and continue
-purchase. If not, press the Cancel button.
+🆘 Dukungan
+Untuk mendapatkan dukungan, Anda dapat:
+• Menghubungi admin dibawah ini
+• Support @UputtSupport di Telegram
+⚠️ JANGAN menghubungi Dukungan Telegram atau Dukungan Bot untuk meminta dukungan terkait pembayaran yang dilakukan di bot ini.
+👉🏻 Tekan tombol Lanjutkan untuk menyatakan bahwa Anda telah
+membaca dan menerima ketentuan ini dan melanjutkan
+pembelian. Jika tidak, tekan tombol Batalkan
 """
 
 
