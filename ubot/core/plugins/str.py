@@ -47,6 +47,7 @@ async def ping_cmd(client, message):
     #uptime = await get_time((time() - start_time))
     start = datetime.now()
     await client.invoke(Ping(ping_id=0))
+    uptime = await get_time((time() - start_time))
     end = datetime.now()
     delta_ping = (end - start).microseconds / 1000
     gua = client.me.is_premium
@@ -61,7 +62,8 @@ async def ping_cmd(client, message):
     if gua == True:
       _ping = f"""
 **<emoji id={cos_ping}>{cos_ping2}</emoji> Pong !!**
-**<emoji id={cos_pong}>{cos_pong2}</emoji>`{str(delta_ping).replace('.', ',')}ms`**"""
+**<emoji id={cos_pong}>{cos_pong2}</emoji>`{str(delta_ping).replace('.', ',')}ms`**
+      **<b>Uptime Ubot:</b> <code>{uptime}</code>**"""
     elif gua == False:
       _ping = f"""
 **{cos_ping2} Pong !!**
