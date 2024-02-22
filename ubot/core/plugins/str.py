@@ -61,9 +61,9 @@ async def ping_cmd(client, message):
     
     if gua == True:
       _ping = f"""
-**<emoji id={cos_ping}>{cos_ping2}</emoji> <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a> **
 **<emoji id={cos_pong}>{cos_pong2}</emoji> ᴘᴏɴɢ : `{str(delta_ping).replace('.', ',')}ms`**
-**<emoji id=6035179905652626049>👁</emoji><b> ᴜᴘᴛɪᴍᴇ : </b> <code>{uptime}</code>**"""
+**<emoji id=6035179905652626049>👁</emoji><b> ᴜᴘᴛɪᴍᴇ : </b> <code>{uptime}</code>**"
+**<emoji id={cos_ping}>{cos_ping2}</emoji> ᴍᴇɴᴛɪᴏɴ : <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a> **""
     elif gua == False:
       _ping = f"""
 **{cos_ping2} Pong !!**
