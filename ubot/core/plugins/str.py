@@ -44,10 +44,9 @@ async def akugtgkn(client, message):
     await client.send_reaction(message.chat.id, message.id, "🔥")
 
 async def ping_cmd(client, message):
-    #uptime = await get_time((time() - start_time))
-    start = datetime.now()
-    await client.invoke(Ping(ping_id=0))
     uptime = await get_time((time() - start_time))
+    start = datetime.now()
+    await client.invoke(Ping(ping_id=0))    
     end = datetime.now()
     delta_ping = (end - start).microseconds / 1000
     gua = client.me.is_premium
