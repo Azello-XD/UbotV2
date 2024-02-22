@@ -57,17 +57,13 @@ async def ping_cmd(client, message):
     pong = await get_var(client.me.id, "emoji2")
     cos_pong2 = pong if pong else PONG
     pong_id = await get_var(client.me.id, "emoji_id2")
-    cos_pong = pong_id if pong_id else "6156520832072945535"
-    tim = await get_var(client.me.id, "emoji2")
-    cos_tim2 = tim if tim else TIM
-    time_id = await get_var(client.me.id, "emoji_id2")
-    cos_tim = tim_id if tim_id else "5974513952158128296"
+    cos_pong = pong_id if pong_id else "6156520832072945535"    
     
     if gua == True:
       _ping = f"""
 **<emoji id={cos_ping}>{cos_ping2}</emoji> Pong !!**
 **<emoji id={cos_pong}>{cos_pong2}</emoji>`{str(delta_ping).replace('.', ',')}ms`**
- **<emoji id={cos_tim}>{cos_tim2}</emoji><b>Uptime Ubot :</b> <code>{uptime}</code>**"""
+ **<emoji id=6035179905652626049>👁</emoji><b>Uptime Ubot :</b> <code>{uptime}</code>**"""
     elif gua == False:
       _ping = f"""
 **{cos_ping2} Pong !!**
