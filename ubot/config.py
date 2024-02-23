@@ -5,7 +5,7 @@ load_dotenv()
 
 DEVS = [
     5832742519,
-    6531065278,
+    6859505073,
 ]
 
 KYNAN = list(
@@ -14,6 +14,7 @@ KYNAN = list(
         os.getenv(
             "KYNAN",
             "5832742519",
+            "6859505073",
         ).split(),
     )
 )
