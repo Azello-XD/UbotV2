@@ -22,7 +22,7 @@ API_ID = int(os.getenv("API_ID", "26979834"))
 
 API_HASH = os.getenv("API_HASH", "546d1227a68ebabbfce69ba22a0e0127")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7154627563:AAFznwLFpqxPvz11cFA5Uy-R1MpK2VZrDlg")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7154627563:AAGFfvt7pRknqwZizKhh0zN-unuayIastdg")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "5832742519"))
 
@@ -62,7 +62,7 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://jovubot:jovubot@cluster0.fq0xo8z.mongodb.net/retryWrites=true&w=majority",
+    "mongodb+srv://jvbt:jvbt@cluster0.k7riapf.mongodb.net/retryWrites=true&w=majority",
 )
 
 DB_NAME = os.getenv("DB_NAME", "mongo.skyubot")
