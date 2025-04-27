@@ -4,27 +4,27 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEVS = [
-    5832742519,
-    6859505073,
+    1927018403,
+    1927018403,
 ]
 
 KYNAN = list(
     map(
         int,
         os.getenv(
-            "KYNAN",
-            "5832742519",
+            "JONATHAN",
+            "1927018403",
         ).split(),
     )
 )
 
-API_ID = int(os.getenv("API_ID", "26979834"))
+API_ID = int(os.getenv("API_ID", "27418440"))
 
-API_HASH = os.getenv("API_HASH", "546d1227a68ebabbfce69ba22a0e0127")
+API_HASH = os.getenv("API_HASH", "0a08a360e0e9f41b9896f655c300d09d")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7154627563:AAGFfvt7pRknqwZizKhh0zN-unuayIastdg")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7363561894:AAEAlRcisKQC_MaoACtlcA9vKJs8ZUVCc6U")
 
-OWNER_ID = int(os.getenv("OWNER_ID", "5832742519"))
+OWNER_ID = int(os.getenv("OWNER_ID", "1927018403"))
 
 
 USER_ID = list(
@@ -32,14 +32,14 @@ USER_ID = list(
         int,
         os.getenv(
             "USER_ID",
-            "5832742519 6859505073",
+            "1927018403 1927018403",
         ).split(),
     )
 )
 
-LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002058883544"))
+LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002584508663"))
 
-LOG_SELLER = int(os.getenv("LOG_SELLER", "-100205888354"))
+LOG_SELLER = int(os.getenv("LOG_SELLER", "-1002614779233"))
 
 BLACKLIST_CHAT = list(
     map(
@@ -62,7 +62,7 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://jvbt:jvbt@cluster0.k7riapf.mongodb.net/retryWrites=true&w=majority",
+    "mongodb+srv://wtfbruh:KontolXD#123@fsub.brzgete.mongodb.net/?retryWrites=true&w=majority&appName=fsub",
 )
 
-DB_NAME = os.getenv("DB_NAME", "mongo.skyubot")
+DB_NAME = os.getenv("DB_NAME", "mongo.xyraacode")
